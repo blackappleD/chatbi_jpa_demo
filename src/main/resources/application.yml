@@ -1,0 +1,25 @@
+spring:
+  profiles:
+    active:
+  application:
+    name: chatbi_jpa_demo
+  datasource:
+    url: "jdbc:mysql://127.0.0.1:3306/chatbi_jpa_demo"
+    username: dev
+    password: P@ssW0rd1874
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+springdoc:
+  default-produces-media-type: application/json
+  api-docs:
+    enabled: true
+  swagger-ui:
+    tags-sorter: alpha
+    operations-sorter: alpha
